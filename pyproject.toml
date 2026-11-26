@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "z-nucleus-core"
+version = "0.1.0"
+description = "A dependency-free asyncio kernel for structured lifecycle management"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+
+[tool.setuptools]
+packages = ["z_nucleus"]
+package-dir = {z_nucleus = "."}
+
+[tool.setuptools.package-data]
+z_nucleus = ["py.typed"]

@@ -1,11 +1,16 @@
 # z-nucleus core
 
-The public Python package provides `Fiber` and `Handle` for structured cleanup
-on one asyncio event loop. Python 3.12 or later is required.
+`z-nucleus-core` provides `Fiber` and `Handle` for structured cleanup on one
+asyncio event loop. It requires Python 3.12 or later and uses only the standard
+library at runtime.
 
-To use the public repository directly, place it at `src/z_nucleus` and set
-`PYTHONPATH=src` when running your application. The package uses only the
-standard library.
+## Installation
+
+```sh
+python -m pip install "git+https://github.com/iimvh/z-nucleus-core.git"
+```
+
+Import the library as `z_nucleus`.
 
 ## Shutdown with escalation
 
