@@ -1,6 +1,7 @@
 """z-nucleus: an asyncio kernel for structured lifecycle management."""
 
 from ._actor import spawn_detached
+from ._escalation import EscalatingUndo
 from ._exceptions import (
     DeadlockError,
     DisposeError,
@@ -21,6 +22,7 @@ __all__ = [
     "DeadlockError",
     "DisposeError",
     "Effect",
+    "EscalatingUndo",
     "Failure",
     "Fiber",
     "FiberClosedError",
